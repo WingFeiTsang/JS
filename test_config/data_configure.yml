@@ -1,0 +1,5 @@
+attack_types: [1]
+attack_aim_num: 2
+attack_aim_type: 9
+time_step: 3
+tarjectory_start_point_num: 1
