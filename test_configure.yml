@@ -1,0 +1,6 @@
+step: 100
+batch_size: 256
+log_save_root: "save/log"
+TGenerator_config_path: "test_config/trajectory_configure.yml"
+DataCollection_config_path: "test_config/data_configure.yml"
+ModelUser_config_path: "test_config/model_configure.yml"

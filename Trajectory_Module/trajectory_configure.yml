@@ -1,0 +1,10 @@
+trajectory:
+  period: 10
+  raidus: 0.75
+  delta_t: 0.1
+  start_time: 0
+uav:
+  uav_num: 5
+  offsets: [[0,0,1], [1,1,1], [1,-1,1], [-1,1,1], [-1,-1,1]]
+  uav_weight: 1
+  limit: [.inf, .inf]

@@ -1,0 +1,37 @@
+use_GPU: True
+alpha: 0.5
+loss_function1: "CE"
+loss_function2: "MSE"
+feature_mining:
+ type: "cnn_lstm"
+ use_lstm_out: False
+ hidden_size: 1024
+ layer: 1
+ lr: 0.0035
+ dropout: 0
+ load_switch: True
+ # load_path: ""
+ # load_path: "D:\\work\\UAV1\\paper\\epoch 实验\\mod\\2023-10-16 18.15.00_base_lstm_epoch_45.p"
+ # load_path: "D:\\work\\UAV1\\paper\\step 实验\\mod\\2023-06-20 18.09.49_base_lstm_step_80.p"
+ # load_path: "D:\\work\\UAV1\\paper\\round 实验\\mod\\2023-06-05 17.56.08_base_lstm_round_1.p"
+ # load_path: "D:\\work\\UAV1\\code\\model\\mod\\2023-06-05 17.56.08_base_lstm_round_7.p"
+ # load_path: "D:\\work\\UAV1\\code\\model\\mod\\2023-06-05 17.56.08_base_lstm_round_9.p"
+ # load_path: "D:\\work\\UAV1\\paper\\real 实验\\mod\\2023-11-15 22.28.10_base_lstm_lr.p"
+ # load_path: "D:\\work\\UAV1\\paper\\FM 实验\\mod\\base_lstm_vgg.p"
+ load_path: "C:\\Users\\Administrator.DESKTOP-1S233E6\\PycharmProjects\\CNN_LSTM\\save\\mod\\2024-FM-u25-t5-1.p"
+
+multi_task:
+ input_channel: 2
+ lr: 0.00070
+ dropout: [0,0,0,0]
+ loss_switch: [1,1,1]
+ load_switch: True
+ # load_path: ""
+ # load_path: "D:\\work\\UAV1\\paper\\epoch 实验\\mod\\2023-10-16 18.15.00_multi_label_epoch_45.p"
+ # load_path: "D:\\work\\UAV1\\paper\\step 实验\\mod\\2023-06-20 18.09.49_multi_label_step_80.p"
+ # load_path: "D:\\work\\UAV1\\paper\\round 实验\\mod\\2023-06-05 17.56.08_multi_label_round_1.p"
+ # load_path: "D:\\work\\UAV1\\code\\model\\mod\\2023-06-05 17.56.08_multi_label_round_7.p"
+ # load_path: "D:\\work\\UAV1\\code\\model\\mod\\2023-06-05 17.56.08_multi_label_round_9.p"
+ # load_path: "D:\\work\\UAV1\\paper\\real 实验\\mod\\2023-11-15 22.28.10_multi_label_lr.p"
+ # load_path: "D:\\work\\UAV1\\paper\\FM 实验\\mod\\multi_label_vgg.p"
+ load_path: "C:\\Users\\Administrator.DESKTOP-1S233E6\\PycharmProjects\\CNN_LSTM\\save\\mod\\2024-MT-u25-t5-1.p"

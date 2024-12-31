@@ -1,0 +1,23 @@
+use_GPU: True
+alpha: 0.5
+loss_function1: "CE"
+loss_function2: "MSE"
+feature_mining:
+ type: "cnn_lstm"
+ use_lstm_out: False
+ hidden_size: 1024
+ layer: 1
+ lr: 0.0035
+ dropout: 0
+# load_switch: True
+ load_switch: False
+ load_path: "C:\\Users\\Administrator.DESKTOP-1S233E6\\PycharmProjects\\CNN_LSTM\\save\\mod\\2024-FM-u10-r5.p"
+
+multi_task:
+ input_channel: 2
+ lr: 0.00070
+ dropout: [0,0,0,0]
+ loss_switch: [1,1,1]
+ load_switch: False
+# load_switch: True
+ load_path: "C:\\Users\\Administrator.DESKTOP-1S233E6\\PycharmProjects\\CNN_LSTM\\save\\mod\\2024-MT-u10-r5.p"

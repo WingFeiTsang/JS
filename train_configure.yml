@@ -1,0 +1,10 @@
+round: 2
+step: 60
+epoch: 25
+batch_size: 256
+model_save_root: "save/mod"
+log_save_root: "save/log"
+config_save_root: "save/config"
+TGenerator_config_path: "train_config/trajectory_configure.yml"
+DataCollection_config_path: "train_config/data_configure.yml"
+ModelUser_config_path: "train_config/model_configure.yml"
